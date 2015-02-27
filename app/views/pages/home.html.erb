@@ -1,5 +1,5 @@
 <div id="fullpage">
-	<div class="section">
+	<div class="section" style="background: #222222 !important;">
 		<%= image_tag "academia_codigo.png", alt: "Logo", class: "academia grayscale" %>
 		<%= image_tag "stuk.png", alt: "Logo", class: "stuk grayscale" %>
 		<div class="container text-center">
@@ -18,7 +18,7 @@
 				<span style="white">&nbsp;&nbsp;&nbsp;&nbsp;current_user.complete_challenge</span><br>
 				<span style="color: #95e40c;">end</span><br><br>
 				<span style="color: #95e40c;">def</span>
-				<span style="color: #f9ab00;">fill_form</span> (</span><span style="color: #e7dc6d;">name,email</span><span style="color: white">)
+				<span style="color: #f9ab00;">fill_form</span> <span style="color: white">(</span><span style="color: #e7dc6d;">name,email</span><span style="color: white">)</span>
 				<br>
 				
 				<form class="form-inline code-form">
@@ -41,7 +41,7 @@
 				<span style="color: #95e40c;">def</span>
 				<span style="color: #f9ab00;">code_test</span> <span style="color: gray"># You will be timed for this test as soon as you hit the start button</span>
 				<br>
-				<span style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;current_user.click (</span><span style="color: #de2471;"><a href="#slide2"><b>LET THE CHALLENGE BEGIN</b></a></span><span style="color: white">)</span><br>
+				<span style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;current_user.click (</span><span style="color: #de2471;"><%= link_to challenge_path, :'data-no-turbolink' => true do %><b>LET THE CHALLENGE BEGIN</b></a></span><span style="color: white">)</span><% end %><br>
 				<span style="color: #95e40c;">end</span><br><br>
 				
 				
@@ -52,43 +52,5 @@
 		</div>
 
 	</div>
-	<div class="section" stule="background: #D83337;" data-anchor="slide2">
-		<div class="container">
-			<div class="text-center">
-				<%= image_tag "ruby.png", alt: "Logo", class: "ruby-small" %>
-				<h1 class="code-title-small white">Code Challenge</h1>
-			</div>
-			<h1 class="question">What does this expression evaluate to?</h1><br>
-			<h6 class="font-code text-center code-question">"YO" + "LO"</h6>
-			<div class="answer text-center">
-				<ul>
-					<a href="#" class="push_button"><li>"YOLO"</li></a>
-					<a href="#" class="push_button"><li>"YO""LO"</li></a>
-					<a href="#" class="push_button"><li>ERROR</li></a>
-					<a href="#" class="push_button"><li>"YO" + "LO"</li></a>
-				</ul>
-			</div>
-		</div>
-	</div>
-		<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
+	
 </div>

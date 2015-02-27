@@ -1,14 +1,11 @@
 var ready;
 ready = function() {
 
-    Turbolinks.enableProgressBar();
-    // Turbolinks.enableTransitionCache();
-    $('html').css('left','auto');
-
     $('#fullpage').fullpage({
-        sectionsColor: ['#222222', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D' ],
+        sectionsColor: ['#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D' ],
         //Navigation
-        menu: false,
+        menu: true,
+        anchors:['firstSlide', 'secondSlide'],
         navigation: true,
         navigationPosition: 'right',
         slidesNavigation: true,
@@ -42,7 +39,7 @@ ready = function() {
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
-        responsive: 0,
+        responsive: 1,
 
         //Custom selectors
         sectionSelector: '.section',
