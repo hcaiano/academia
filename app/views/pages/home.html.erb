@@ -1,2 +1,94 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="fullpage">
+	<div class="section">
+		<%= image_tag "academia_codigo.png", alt: "Logo", class: "academia grayscale" %>
+		<%= image_tag "stuk.png", alt: "Logo", class: "stuk grayscale" %>
+		<div class="container text-center">
+			<%= image_tag "ruby.png", alt: "Logo", class: "ruby" %>
+			<h1 class="code-title white">Code Challenge</h1>
+		</div>
+
+		<div class="container">
+			
+			<br>
+			<h4 class="font-code white text-left ruby-code">
+				<span style="color: #95e40c;">if</span>
+				<span style="color: white;">current_user.wants_to_apply_to? (</span><span style="color: #e7dc6d;">:academia_de_codigo</span><span style="color: white">)</span>
+				<br>
+
+				<span style="white">&nbsp;&nbsp;&nbsp;&nbsp;current_user.complete_challenge</span><br>
+				<span style="color: #95e40c;">end</span><br><br>
+				<span style="color: #95e40c;">def</span>
+				<span style="color: #f9ab00;">fill_form</span> (</span><span style="color: #e7dc6d;">name,email</span><span style="color: white">)
+				<br>
+				
+				<form class="form-inline code-form">
+					<div class="form-group">
+						<input type="text" autofocus class="form-control" id="exampleInputName2" placeholder="Enter Your Name">
+					</div><br>
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter Your Email">
+					</div>
+				</form>
+				<span style="color: #95e40c;">end</span><br><br>
+				<span style="color: white;">before_action </span><span style="color: #e7dc6d;">:learn_ruby</span><br>
+
+				<span style="color: #95e40c;">def</span>
+				<span style="color: #f9ab00;">learn_ruby</span> <span style="color: gray"># Course: Introduction to Ruby | Estimated Time 1 hour</span>
+				<br>
+				<span style="white">&nbsp;&nbsp;&nbsp;&nbsp;redirect_to</span> <span style="color: #de2471;">"</span><span style="color: #e7dc6d;"><a href="http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1?curriculum_id=5059f8619189a5000201fbcb" target="_blank" style="color: #e7dc6d;">http://www.codecademy.com</a></span><span style="color: #de2471;">"</span><br>
+				<span style="color: #95e40c;">end</span><br><br>
+				<span style="color: white;">after_action </span><span style="color: #e7dc6d;">:code_test</span><br>
+				<span style="color: #95e40c;">def</span>
+				<span style="color: #f9ab00;">code_test</span> <span style="color: gray"># You will be timed for this test as soon as you hit the start button</span>
+				<br>
+				<span style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;current_user.click (</span><span style="color: #de2471;"><a href="#slide2"><b>LET THE CHALLENGE BEGIN</b></a></span><span style="color: white">)</span><br>
+				<span style="color: #95e40c;">end</span><br><br>
+				
+				
+				<span style="color: gray"># Don't forget to learn ruby basics and fill your information above.</span>
+			</h4>
+
+
+		</div>
+
+	</div>
+	<div class="section" stule="background: #D83337;" data-anchor="slide2">
+		<div class="container">
+			<div class="text-center">
+				<%= image_tag "ruby.png", alt: "Logo", class: "ruby-small" %>
+				<h1 class="code-title-small white">Code Challenge</h1>
+			</div>
+			<h1 class="question">What does this expression evaluate to?</h1><br>
+			<h6 class="font-code text-center code-question">"YO" + "LO"</h6>
+			<div class="answer text-center">
+				<ul>
+					<a href="#" class="push_button"><li>"YOLO"</li></a>
+					<a href="#" class="push_button"><li>"YO""LO"</li></a>
+					<a href="#" class="push_button"><li>ERROR</li></a>
+					<a href="#" class="push_button"><li>"YO" + "LO"</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+</div>

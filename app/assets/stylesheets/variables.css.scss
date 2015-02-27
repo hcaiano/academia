@@ -1,0 +1,80 @@
+/*------------------------------------*\
+    #MY VARIABLES
+\*------------------------------------*/
+
+/* My Variables */
+
+$font-primary: "Raleway", "Helvetica Neue", "Arial", sans-serif;
+$font-secondary: 'Merriweather', "Times New Roman", Times, serif;
+$font-third: Montserrat, arial, sans-serif;
+
+/*------------------------------------*\
+    #BOOTSTRAP OVERRIDES
+\*------------------------------------*/
+
+
+/* Media Queries */
+
+$screen-sm: 769px;
+
+
+/* Colors */
+
+$black: #151515;
+$black-light: #333;
+$white: #FFF;
+
+$brand-info: #f9005c;
+$brand-info--light: #FE93BA;
+$brand-info--dark: #930036;
+
+$brand-primary: #27c5c3;
+$brand-primary--light: #99EBE9;
+$brand-primary--dark: #0D4544;
+
+$brand-success: #58bf44;
+$brand-warning: #FF8F33;
+$brand-danger: #e41919;
+
+
+$gray-darker: #222;
+$gray-dark: #555;
+$gray: #999;
+$gray-light: #f4f4f4;
+$gray-lighter: #f8f8f8;
+
+
+/* Fonts */
+
+$font-family-sans-serif: "Raleway", "Helvetica Neue", "Arial", sans-serif;
+$font-family-serif: 'Merriweather', "Times New Roman", Times, serif;
+$font-family-monospace: Montserrat, arial, sans-serif;
+$font-family-base: "Raleway", "Helvetica Neue", "Arial", sans-serif;
+
+/* Tooltips & Popover */
+
+$tooltip-max-width: 200px;
+$tooltip-color: #fff;
+$tooltip-bg: #000;
+
+$popover-max-width: 276px;
+
+
+/* Components Border Radius */
+$border-radius-base: 0.5px;
+$border-radius-large: 1px;
+$border-radius-small: 0px;
+
+/* Buttons */
+
+$btn-primary-border: $brand-primary;
+$btn-success-border: $brand-success;
+$btn-info-border: $brand-info;
+$btn-warning-border: $brand-warning;
+$btn-danger-border: $brand-danger;
+
+$btn-default-bg: #eee;
+$btn-default-color: #888;
+$btn-default-border: #eee;
+
+$input-border-focus: $brand-primary;

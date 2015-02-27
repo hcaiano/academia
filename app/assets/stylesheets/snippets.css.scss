@@ -1,0 +1,507 @@
+/**
+ * RAILS TAGS
+
+     <%= image_tag "icon.png", size: "16x10", alt: "Edit Entry", class: "some-class" %>
+
+	htmlbeautifier app/views/layouts/_nav.html.erb
+
+
+ */
+
+
+
+/* Print */
+@media print {
+	* {
+		background: none !important;
+		color: black !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+
+		/* Images, vectors and such */
+		filter: Gray(); 						 /* IE4-8: depreciated */
+		filter: url('desaturate.svg#grayscale'); /* SVG version for IE10, Firefox, Safari 5 and Opera */
+		-webkit-filter: grayscale(100%); 		 /* Chrome + Safari 6 */
+		-moz-filter: grayscale(100%); 			 /* Future proof */
+		-ms-filter: grayscale(100%); 			 /* Future proof */
+		-o-filter: grayscale(100%); 			 /* Future proof */
+		filter: grayscale(100%); 				 /* Future proof or polyfilled */
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")"; 
+	}
+
+	a[href="#"],
+	a[href="javascript:"] {
+		content: "";
+	}
+}
+
+
+
+/* Debug: empty Elements */
+.debug div:empty, .debug span:empty,.debug li:empty,.debug p:empty,.debug td:empty,.debug th:empty { 
+	padding: 20px; 
+	border: 5px dotted yellow !important;
+}
+
+/* Debug: empty Attributes */
+.debug *[alt=""], .debug *[title=""], .debug *[class=""], .debug *[id=""], .debug a[href=""] { 
+	border: 5px solid yellow !important;
+}
+
+/* Debug: deprecated Elements */
+.debug applet, .debug basefont, .debug center, .debug dir, .debug font, .debug isindex, .debug menu, .debug s, .debug strike, .debug u {
+	border: 5px dotted red !important;
+}
+
+/* Debug: deprecated Attributes */
+.debug *[background], .debug *[bgcolor], .debug *[clear], .debug *[color], .debug *[compact], .debug *[noshade], .debug *[nowrap], .debug *[size], .debug *[start],.debug *[bottommargin], .debug *[leftmargin], .debug *[rightmargin], .debug *[topmargin], .debug *[marginheight], .debug *[marginwidth], .debug *[alink], .debug *[link], .debug *[text], .debug *[vlink],.debug *[align], .debug *[valign],.debug *[hspace], .debug *[vspace],.debug *[height], .debug *[width],.debug ul[type], .debug ol[type], .debug li[type] {
+	border: 5px solid red !important;
+}
+
+/* Debug: proposed Deprecated Elements */
+.debug input[type="button"], .debug big, .debug tt {
+	border: 5px dotted #33FF00 !important;
+}
+
+/* Debug: proposed Deprecated Attributes */
+.debug *[border], .debug table[cellpadding], .debug table[cellspacing] { 
+	border: 5px solid #33FF00 !important;
+}
+
+/* Smooth Fonts */
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+/* Proper box-model */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Clearfix hack */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* Cleafix hack: IE6/7 support */
+.clearfix {
+	*zoom: 1;
+}
+
+/* Truncate Ellipse string */
+.truncate {
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis; /* Required for IE8 */
+	-o-text-overflow: ellipsis; /* Required for Opera */
+	text-overflow: ellipsis;
+}
+
+
+/* Make wrap in pre tags */
+pre {
+	white-space: pre-wrap;       /* Chrome & Safari */
+	white-space: -moz-pre-wrap;  /* Mozilla since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+/* Unstyled list */
+.clearlist, .clearlist li {
+list-style: none;
+padding: 0;
+margin: 0;
+background: none;
+}
+
+
+/* Hide / Show classes */
+.hide { display: none; }
+.show { display: block; }
+
+/* Disabled effect class */
+.disabled {
+	pointer-events: none;
+	opacity: 0.5;
+  cursor:default !important;
+}
+
+/* Hide: keep in to bots and screen-readers */
+.visuallyhidden {
+	position: absolute;
+	width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+	height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+	padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;    
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* Links improvement */
+a {
+text-decoration: none !important;
+-webkit-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+position: relative;
+padding-bottom: 0px;
+outline: none !important;
+border-bottom: 2px solid white;
+}
+
+a:hover { 
+	color: $brand-primary;
+  text-decoration: none;
+}
+
+
+/* CSS Transparency */
+.transparent {
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+/* Remove textarea scrollbar in IE */
+textarea {
+  overflow:auto;
+}
+
+/* Give Clickable Elements a Pointer Cursor */
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+       cursor: pointer;
+}
+
+/* Mouse Highlight Text Selection */
+::selection {
+color: $brand-primary;
+background-color: $gray-darker;
+}
+::-moz-selection {
+color: $brand-primary;
+background-color: $gray-darker;
+}
+
+/* Vertical Center */
+
+.vertical-center {
+	min-height: 10em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Image Loading GIF */
+img {
+    background: image-url('loading/loader.gif') no−repeat 50% 50%;
+}
+
+/* Rounded Corners */
+
+.rounded{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.circle {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%; /* future proofing */
+    -khtml-border-radius: 100%; /* for old Konqueror browsers */
+}
+
+.object-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Image Flip */
+
+img.flip {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+/* Blockquote Class */
+blockquote {
+margin: 3em 0 3em 0;
+border-width: 1px;
+border: 1px solid #eaeaea;
+padding: 2em;
+background: none;
+text-align: left;
+font-family: $font-secondary;
+font-size: 1.3em;
+font-style: normal;
+line-height: 1.7;
+color: $gray;
+}
+
+blockquote p {
+margin-bottom: 1em;
+font-size: 1.3em;
+font-style: normal;
+color: $gray-darker;
+line-height: 1.7;
+}
+
+blockquote footer {
+margin-top: -10px;
+font-size: 1em;
+font-family: $font-primary;
+color: $gray;
+}
+
+/* Pull Quote Class */
+
+.pullquote {
+	width: 300px;
+	float: right;
+	margin: 5px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font: italic bold #ff0000 ;
+}
+
+/* HR Color */
+
+hr {
+border-top: 2px solid #eaeaea;
+border-left: 0;
+border-right: 0;
+border-bottom: 0;
+}
+
+.hr-nomargin {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Image Effect */
+
+.blur {
+filter: blur(5px);
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+}
+
+.grayscale {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+
+.saturate {
+    filter: saturate(500%);
+    -webkit-filter: saturate(500%);
+    -moz-filter: saturate(500%);
+    -o-filter: saturate(500%);
+    -ms-filter: saturate(500%);
+}
+
+.sepia {
+    filter: sepia(1);
+    -webkit-filter: sepia(1);
+    -moz-filter: sepia(1);
+    -o-filter: sepia(1);
+    -ms-filter: sepia(1);
+}
+
+.hue-rotate {
+    filter: hue-rotate(180deg);
+    -webkit-filter: hue-rotate(180deg);
+    -moz-filter: hue-rotate(180deg);
+    -o-filter: hue-rotate(180deg);
+    -ms-filter: hue-rotate(180deg);
+}
+
+
+/* Fixed Footer */
+
+#page-footer {
+position:fixed;
+left:0px;
+bottom:0px;
+height:30px;
+width:100%;
+background:white;
+}
+/* IE 6 */
+* html #page-footer {
+    position:absolute;
+    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+/* Import Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic|Merriweather:400,900,300,700|Raleway:500,600,700,800,400,300|Montserrat:400,700);
+
+/* Import Icons */
+@font-face {
+  font-family: 'Simple-Line-Icons';
+  src: font-url('Simple-Line-Icons.eot'); /* IE9 Compat Modes */
+  src: font-url('Simple-Line-Icons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       font-url('Simple-Line-Icons.woff') format('woff'), /* Modern Browsers */
+       font-url('Simple-Line-Icons.ttf')  format('truetype'), /* Safari, Android, iOS */
+       font-url('Simple-Line-Icons.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* Default Font Size to use rEM */
+
+html {
+	font-size: 100%; /* font-size 1em = 10px */
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 62.5%; /* font-size 1em = 10px */
+    font-weight: 500;
+    overflow-x:hidden;
+    text-rendering: optimizelegibility;
+    
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    
+    -moz-tap-highlight-color:rgba(0,0,0,0); 
+    -moz-text-size-adjust: none;
+    -moz-font-smoothing: antialiased;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    -ms-tap-highlight-color:rgba(0,0,0,0); 
+    -ms-text-size-adjust: none;
+    -ms-font-smoothing: antialiased;
+
+    color: $gray-darker;
+    background-color: white;
+}
+
+/* Fonts */
+.font-primary {
+    font-family: $font-primary;
+}
+
+.font-secondary {
+	font-family: $font-secondary;
+}
+
+.font-code {
+    font-family: Monaco, Mono-Space, monospace;
+}
+
+.font-numbers {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+/* Font Weight */
+
+.font-light {
+	font-weight: 300;
+}
+
+.font-regular {
+	font-weight: 500;
+}
+
+.font-bold, strong {
+	font-weight: 700;
+}
+
+.font-black {
+	font-weight: 900;
+}
+
+/* Default p Size */
+
+p {
+    font-size: 1.6em;
+    font-weight: 300;
+    color: $gray-dark;
+    line-height: 1.85;
+    margin: 0 0 1.5em 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+.color-primary {
+	color: $brand-primary !important;
+}
+
+.color-info {
+	color: $brand-info !important;
+}
+
+.color-success {
+	color: $brand-success !important;
+}
+
+.color-warning {
+  color: $brand-warning !important;
+}
+
+.color-danger {
+  color: $brand-danger !important;
+}
+
+.white {
+	color: $white !important;
+}
+
+.black {
+	color: $black !important;
+}
+
+.gray {
+	color: $gray !important;
+}
+
+.light-gray {
+color: rgb(210, 210, 210) !important;
+}
+
+.light-gray-2 {
+  color: #DDDDDD !important;
+}
+
