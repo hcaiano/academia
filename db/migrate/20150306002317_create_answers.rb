@@ -3,8 +3,9 @@ class CreateAnswers < ActiveRecord::Migration
     create_table :answers do |t|
       t.text :general
       t.integer :score
-      t.integer :user_id
       t.string :guid
+      t.string :email
+      t.string :name
 
       t.timestamps
     end

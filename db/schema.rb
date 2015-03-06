@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(version: 20150306002317) do
   create_table "answers", force: true do |t|
     t.text     "general"
     t.integer  "score"
-    t.integer  "user_id"
     t.string   "guid"
+    t.string   "email"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

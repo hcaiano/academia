@@ -5,7 +5,6 @@
 		<div class="container text-center">
 			<%= image_tag "ruby.png", alt: "Logo", class: "ruby" %>
 			<h1 class="code-title white">Code Challenge</h1>
-			<%= link_to "login", new_user_session_path %>
 		</div>
 		<div class="container">
 			<br>
@@ -18,13 +17,13 @@
 				<span style="color: #f9ab00;">fill_form</span> <span style="color: white">(</span><span style="color: #e7dc6d;">name,email</span><span style="color: white">)</span>
 				<br>
 				
-				<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "form-inline code-form"}) do |f| %>
+				<%= simple_form_for(@answer, html: {class: "form-inline code-form"}) do |f| %>
   					<%= f.error_notification %>
 					<div class="form-group">
-					 <%= f.input :email, required: true, autofocus: true, input_html: {class: "form-control"}, placeholder: "Enter your Email", label: false %>
+					 <%= f.input :name, required: true, autofocus: true, input_html: {class: "form-control"}, placeholder: "Enter your Name", label: false %>
 					</div><br>
 					<div class="form-group">
-					<%= f.input :password, required: true, input_html: {class: "form-control"}, placeholder: "Password", label: false %>
+					<%= f.input :email, required: true, input_html: {class: "form-control"}, placeholder: "Enter your Email", label: false %>
 					</div>
 					<%= f.submit "Go", class: "signup" %>
 				<% end %>
