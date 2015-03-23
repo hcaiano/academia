@@ -5,10 +5,9 @@ ready = function() {
         sectionsColor: ['#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D', '#5BDAE3', '#40C381', '#FFDE01', '#EC7068', '#2299DD', '#F79BC0', '#F7941D' ],
         //Navigation
         menu: true,
-        anchors:['firstSlide', 'secondSlide'],
-        navigation: true,
+        navigation: false,
         navigationPosition: 'right',
-        slidesNavigation: true,
+        slidesNavigation: false,
         slidesNavPosition: 'bottom',
 
         //Scrolling
@@ -36,7 +35,7 @@ ready = function() {
         controlArrows: true,
         verticalCentered: true,
         resize : false,
-        paddingTop: '3em',
+        paddingTop: '0',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
         responsive: 1,
@@ -57,6 +56,9 @@ ready = function() {
 
 
 }
+
+
+
 
 //$(document).ready(ready);
 $(ready);

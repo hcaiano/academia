@@ -1,0 +1,21 @@
+Id;Question;Answer 1;Answer 2;Answer 3;Answer 4;Correct;Question 2;Created at;Updated at
+20;How do you print out;Print Hello + World;"Print ""Hello + World""";"p ""Hello World""";"say ""Hello World""";3;"""Hello World""";2015-03-06 12:10:10;2015-03-06 12:10:10
+19;Get the last element of the lyric Array.;lyric.pop;lyric[2];lyric[3];lyric{3};2;"lyric = [""laughter"", ""it's"", ""free""]";2015-03-06 12:08:34;2015-03-06 12:08:34
+18;Get the first element of the lyric Array.;lyric.start;lyric{1};lyric[0];lyric[1];3;"lyric = [""laughter"", ""it's"", ""free""]";2015-03-06 12:07:25;2015-03-06 12:07:25
+17;What does the following expression return:;"[""uno,dos,tres""]";"""uno,dos,tres""";"""uno"",""dos"",""tres""";3;4;"[""uno"", ""dos"", ""tres""].length()";2015-03-06 12:06:06;2015-03-06 12:06:06
+16;What is the value of x when x = 5 and;6;5;5+1;5x;1;x = x + 1;2015-03-06 12:05:01;2015-03-06 12:05:01
+15;What does the following expression evaluate to?;yes;no;true;false;3;5 > 4;2015-03-06 12:03:54;2015-03-06 12:03:54
+14;What does the following expression evaluate to?;yes;no;true;false;4;4 != 4;2015-03-06 12:03:29;2015-03-06 12:03:29
+13;Create an Array that contains the values;"{""mike tyson"", 89, 9.7}";"[""mike tyson"", 89, 9.7]";[mike tyson, 89, 9.7];(mike tyson, 89, 9.7);2;" ""mike tyson"", 89, and 9.7.";2015-03-06 12:02:45;2015-03-06 12:02:45
+12;Create an array with ;{};[];();/\;2;nothing inside it;2015-03-06 12:01:45;2015-03-06 12:01:45
+11;"Convert every letter of ""YoLo BrAh"" to lowercase.";nice.each do |word| word.down end;nice.each do |word| word.downcase end;nice.downcase();nice.Downcase;3;"nice = ""YoLo BrAh""";2015-03-06 12:00:50;2015-03-06 12:00:50
+10;Make the code run well;"band == ""Blink"" + 182";"""Blink"" + 182 == band";"band = ""Blink"" + 182.to_s";"band == ""Blink"" + 182.to_s";3;"band = ""Blink"" + 182";2015-03-06 11:59:09;2015-03-06 11:59:09
+9;What is the problem with the following code?;You should not have a single quote inside the double quotes;The equal sign should be ==;The order should be reversed;You should not have blank spaces when declaring a variable;4;"my variable = ""I'm cool""";2015-03-06 11:57:58;2015-03-06 11:57:58
+8;What does the following expression evaluate to?;Lisbon;l + i + s + b + o + n;LisboN;LISBON;4;"""lisbon"".upcase";2015-03-06 11:56:26;2015-03-06 11:56:26
+7;What does the following expression evaluate to?;1.5;1,5;error;1;4;3/2;2015-03-06 11:55:32;2015-03-06 11:55:32
+6;What does the following expression evaluate to?;34;7;3 + 4;3,4;2;3 + 4;2015-03-06 11:54:56;2015-03-06 11:54:56
+5;What does this expression evaluate to?;bob42;"""bob""42";"""bob"" + 42";error;4;"""bob"" + 42";2015-03-06 11:53:21;2015-03-06 11:53:21
+4;What is the datatype of;String;Number;Integer;Float;2;5;2015-03-06 11:52:37;2015-03-06 11:52:37
+3;What is the datatype of;String;Word;Integer;Float;1;"""Matt""";2015-03-06 11:52:16;2015-03-06 11:52:16
+2;What does this expression evaluate to?;"""YOLO""";"""YO"" + ""LO""";YOLO;YO + LO;1;"""YO"" + ""LO""";2015-03-06 00:59:23;2015-03-06 00:59:23
+1;Assign the variable x to the;x == 5;5 == x;x = 5;5 = x;3;value of 5;2015-03-06 00:58:24;2015-03-06 00:58:24
