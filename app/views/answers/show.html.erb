@@ -1,10 +1,14 @@
 
-				<div id="heading"><%= image_tag "ruby.png", alt: "Logo", class: "ruby-small" %>
+<div id="heading">
+	<div class="clearfix"></div>
+	<div class="heading-answers">
+		<%= image_tag "logo2.png", alt: "Logo", class: "academia_logo pull-left" %>
+		<h1 class="code-title-small white"><%= image_tag "ruby.png", alt: "Logo", class: "ruby-small" %> Challenge</h1>
+	</div>
 
-				<h1 class="code-title-small white">Code Challenge</h1>
-				</div>
+</div>
 <div id="fullpage">
-<% @questions.each do |question| %>
+	<% @questions.each do |question| %>
 	<div class="section" stule="background: #D83337;" data-anchor="question_<%= question.id %>">
 		<div class="container">
 			
@@ -18,21 +22,36 @@
 					<a href="#" class="push_button"><li><%= question.answer_4 %></li></a>
 				</ul>
 			</div>
+			<div class="text-center">
+			<button class="btn btn-md btn-default previous-btn previous_slide"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;&nbsp;Previous Question</button>
+			<button class="btn btn-md btn-default previous-btn next_slide">Next Question&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></button>
+			</div>
 		</div>
 	</div>
 	
-<% end %>
-<div class="section" stule="background: #D83337;" data-anchor="final_answer">
+	<% end %>
+	<div class="section" stule="background: #D83337;" data-anchor="final_answer">
 		<div class="container">
 			
 			<h1 class="question">Why do you want to be a coder?</h1><br>
 			<h6 class="font-code text-center code-question">Be as honest as possible</h6>
 			<div class="answer text-center">
-			<textarea class="form-control" rows="5"></textarea>
-			<ul>
+				<textarea class="form-control" rows="5"></textarea>
+				<ul>
 					<a href="#" class="push_button"><li>Finish</li></a>	
-								</ul>
+				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+
+$( '.previous_slide' ).click(function() {
+  $.fn.fullpage.moveSectionUp()
+});
+
+$( '.next_slide' ).click(function() {
+  $.fn.fullpage.moveSectionDown()
+});
+</script>

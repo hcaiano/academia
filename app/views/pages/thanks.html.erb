@@ -1,0 +1,54 @@
+<div id="fullpage">
+	<div class="section" style="background: #222222 !important;">
+		<%= image_tag "academia_codigo.png", alt: "Logo", class: "academia grayscale" %>
+		<%= image_tag "stuk.png", alt: "Logo", class: "stuk grayscale" %>
+		<div class="container text-center">
+			<h1 class="code-title white">Thank you</h1>
+			<h1 class="code-title-2 white font-code">You've completed the challenge in <span style="color: #95e40c;">04m52s</span></h1>
+		</div>
+		<div class="container">
+			<br>
+			<h4 class="font-code white text-left ruby-code">
+				<div class="question_final text-left"><span style="color: #f9ab00;">Why do you want to be a coder?</span> <span style="color: gray"># Be as honest as possible</span></div> <br>
+				<textarea class="form-control" rows="3"></textarea>
+				<br>
+				<span style="color: #95e40c;">if</span>
+				<span style="color: white;">current_user.completed_challenge (</span><span style="color: #e7dc6d;">:academia_de_codigo</span><span style="color: white">)</span><br>
+
+				<span style="white">&nbsp;&nbsp;&nbsp;&nbsp;current_user.confirm_information</span> <span style="color: white">(</span><span style="color: #e7dc6d;">name,email</span><span style="color: white">)</span><br>
+				<span style="color: #95e40c;">end</span><br><br>
+				<span style="color: #95e40c;">def</span>
+				<span style="color: #f9ab00;">confirm_information</span> <span style="color: white">(</span><span style="color: #e7dc6d;">name,email</span><span style="color: white">)</span>
+				<br>
+				<form accept-charset="UTF-8" action="/answers" class="simple_form form-inline code-form" id="new_answer" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="HQesh/HLlnhs1xTY6rCNyjJpWpb5R6BopkzrJr7P/RI="></div>
+					
+					<div class="form-group">
+						<div class="form-group string required answer_name"><input aria-required="true" autofocus="autofocus" class="string required form-control form-control" id="answer_name" name="answer[name]" value="Henrique Caiano" placeholder="Enter your Name" required="required" type="text"></div>
+					</div><br>
+					<div class="form-group">
+						<div class="form-group email required answer_email"><input aria-required="true" value="henrique@stuk.io" class="string email required form-control form-control" id="answer_email" name="answer[email]" placeholder="Enter your Email" required="required" type="email"></div>
+					</div>
+					<input class="signup" name="commit" type="submit" value="Go">
+				</form>
+				<span style="color: #95e40c;">end</span><br><br>
+				<span style="color: #95e40c;">def</span><br>
+				<span style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;current_user.click (</span><span style="color: #de2471;"><%= link_to "#", :'data-no-turbolink' => true, id: "challenge_begin" do %><b>SUBMIT YOUR APPLY CHALLENGE</b></a></span><span style="color: white">)</span><% end %><br>
+				<span style="color: #95e40c;">end</span><br><br>	
+				
+				<br>
+				
+			</h4>
+
+			
+
+
+
+		</div>
+	</div>
+</div>
+
+<script>
+	$( "#challenge_begin" ).click(function() {
+		$(".signup").click();
+	});
+</script>
